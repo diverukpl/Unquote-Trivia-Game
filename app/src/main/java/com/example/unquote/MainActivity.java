@@ -277,9 +277,9 @@ public class MainActivity extends AppCompatActivity {
 
     String getGameOverMessage(int totalCorrect, int totalQuestions) {
         if (totalCorrect == totalQuestions) {
-            return "You got all " + totalQuestions + " right! You won!";
+            return "You got all " + (totalQuestions - 7) + " right! You won!";
         } else {
-            return "You got " + totalCorrect + " right out of " + totalQuestions + ". Better luck next time!";
+            return "You got " + totalCorrect + " right out of " + (totalQuestions - 7) + ". Better luck next time!";
         }
     }
 }
